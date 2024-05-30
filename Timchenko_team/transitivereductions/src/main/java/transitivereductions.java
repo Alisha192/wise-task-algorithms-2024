@@ -1,4 +1,4 @@
-package ru.leti;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import com.mathsystem.api.graph.model.Vertex;
 import com.mathsystem.api.graph.model.Edge;
 import com.mathsystem.domain.plugin.plugintype.GraphCharacteristic;
 
-public class TransitiveReductions implements GraphCharacteristic {
+public class transitivereductions implements GraphCharacteristic {
     private Optional<Edge> findEdge(final List<Edge> edges, final UUID src, final UUID dst) {
         for (int i = 0; i < edges.size(); ++i) {
             final Edge edge = edges.get(i);

@@ -1,4 +1,4 @@
-package ru.leti;
+
 
 import static org.junit.Assert.assertTrue;
 
@@ -13,7 +13,7 @@ import com.mathsystem.api.graph.model.Graph;
 public class TransitiveReductionsTest {
     @Test
     public void minimal_spanning_tree() throws RuntimeException {
-        TransitiveReductions tr = new TransitiveReductions();
+        transitivereductions tr = new transitivereductions();
 
         for (File f : new File("src/test/resources/mst").listFiles()) {
             Graph graph = null;
@@ -30,7 +30,7 @@ public class TransitiveReductionsTest {
 
     @Test
     public void fully_connected_graph() throws RuntimeException {
-        TransitiveReductions tr = new TransitiveReductions();
+        transitivereductions tr = new transitivereductions();
         Graph graph = null;
 
         try {
@@ -44,7 +44,7 @@ public class TransitiveReductionsTest {
 
     @Test
     public void partially_connected_graph() throws RuntimeException {
-        TransitiveReductions tr = new TransitiveReductions();
+        transitivereductions tr = new transitivereductions();
         Graph graph = null;
 
         try {
@@ -58,7 +58,7 @@ public class TransitiveReductionsTest {
 
     @Test
     public void cyclic_graph() throws RuntimeException {
-        TransitiveReductions tr = new TransitiveReductions();
+        transitivereductions tr = new transitivereductions();
         Graph graph = null;
 
         try {
@@ -72,7 +72,7 @@ public class TransitiveReductionsTest {
 
     @Test
     public void linear_graph() throws RuntimeException {
-        TransitiveReductions tr = new TransitiveReductions();
+        transitivereductions tr = new transitivereductions();
         Graph graph = null;
 
         try {
@@ -86,7 +86,7 @@ public class TransitiveReductionsTest {
 
     @Test
     public void triangular_graph() throws RuntimeException {
-        TransitiveReductions tr = new TransitiveReductions();
+        transitivereductions tr = new transitivereductions();
         Graph graph = null;
 
         try {
